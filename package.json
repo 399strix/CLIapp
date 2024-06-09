@@ -1,0 +1,41 @@
+{
+	"name": "tech-test",
+	"description": "CLI Application for BE Techincal Test",
+	"version": "0.0.1",
+	"license": "UNLICENSED",
+	"bin": {
+		"techTest": "index.js",
+		"filter": "index.js"
+	},
+	"author": {
+		"name": "dzakirizadf",
+		"email": "ddf7802@gmail.com",
+		"url": "https://github.com/399strix"
+	},
+	"keywords": [
+		"techTest",
+		"dzakirizadf"
+	],
+	"files": [
+		"index.js",
+		"utils"
+	],
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"cli-alerts": "^1.2.2",
+		"cli-handle-error": "^4.4.0",
+		"cli-handle-unhandled": "^1.1.1",
+		"cli-meow-help": "^3.1.0",
+		"cli-welcome": "^2.2.3",
+		"csv-parser": "^3.0.0",
+		"fast-csv": "^5.0.1",
+		"meow": "^9.0.0",
+		"yargs": "^17.7.2"
+	},
+	"devDependencies": {
+		"prettier": "^3.3.1"
+	}
+}
