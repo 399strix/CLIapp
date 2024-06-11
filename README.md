@@ -7,10 +7,13 @@ CLI Application for BE Techincal Test
 ## Installation
 
 ```bash
-git clone https://github.com/linlaz/generator-filter-csv.git
+git clone https://github.com/399strix/CLIapp.git
 ```
 ```bash
-cd generator-filter-csv
+git checkout -b master
+```
+```bash
+git pull origin master
 ```
 ```bash
 npm install -g .
@@ -20,13 +23,13 @@ npm install -g .
 ## Usage
 
 ```javascript
-filter -d <directory> -s <start_time> -e <end_time>
+filter -d <directory> -s <startTime> -e <endTime>
 ```
 
 ## Example In This Project
 
 ```javascript
-filter -d linux-amd64 -s 2023-08-17T07:35:36+07:00 -e 2023-11-17T07:35:36+07:00
+filter -d linux-amd64 -s "2023-08-15T00:00:00Z" -e 2023-08-29T23:59:59Z"
 ```
 
-File result filter in directory you run this command and have name filtered_data.csv
+File result filter in directory you run this command and have name report.csv
