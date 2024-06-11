@@ -16,7 +16,7 @@ git checkout -b master
 git pull origin master
 ```
 ```bash
-npm install -g .
+
 ```
 
     
