@@ -7,13 +7,14 @@ module.exports = async (directory, startTime, endTime) => {
     const start = new Date(startTime);
     const end = new Date(endTime);
 
-    if (end <= start) {
-        console.error("EndTime must be greater than or equal to startTime");
-    }
-    if (isNaN(start) || isNaN(end)) {
+    if (!isNaN(start) && !isNaN(end)) {
+        if (end <= start) {
+            console.error("EndTime must be greater than or equal to startTime");
+        }
+    }else{
         console.error('unable to filter the data : Invalid date format. Please use RFC3339 format.');
         process.exit(1);
-    }
+    }   
 
     let csvFiles = await getCsvFiles(directory);
     const filteredData = [];
